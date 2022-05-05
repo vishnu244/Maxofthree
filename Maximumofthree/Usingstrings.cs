@@ -10,13 +10,13 @@ namespace Maximumofthree
     {
         public string MaxValueStrings(string a, string b, string c)
         {
-            string max;
-            max = a;
-            if (b.Length.CompareTo(max.Length) > 0)
-                max = b;
-            if (c.Length.CompareTo(max.Length) > 0)
-                max = c;
-            return max;
+            string max1;
+            max1 = a;
+            if (b.Length.CompareTo(max1.Length) > 0)
+                max1 = b;
+            if (c.Length.CompareTo(max1.Length) > 0)
+                max1 = c;
+            return max1;
 
         }
     }
