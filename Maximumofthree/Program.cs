@@ -7,7 +7,7 @@ Console.WriteLine("Welcome to Maximum of Three using generics!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)using INT\n2)using Float\n3)usingString\n4)using generic class" +
+    Console.WriteLine("Choose the Program to be executed :\n1)using INT\n2)using Float\n3)usingString\n4)using generic class\n5)using generic class&Method" +
         "");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
@@ -52,7 +52,15 @@ while (true)
             Console.WriteLine("The Maximum of three strings is :" + value3);
             Console.WriteLine("\n");
             break;
-
+        case 5:           
+            int Mvalue1 = GenericMethod<int>.MaxusingGenerics<int>(2, 3, 4);
+            Console.WriteLine("The Maximum of three integers is :" + Mvalue1);
+            double Mvalue2 = GenericMethod<double>.MaxusingGenerics<double>(2.2, 3.3, 4.4);
+            Console.WriteLine("The Maximum of three values is :" + Mvalue2);
+            string Mvalue3 = GenericMethod<string>.MaxusingGenerics<string>("Apple", "peach", "banana");
+            Console.WriteLine("The Maximum of three strings is :" + Mvalue3);
+            Console.WriteLine("\n");            
+            break;
     }
 }
 
