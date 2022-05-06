@@ -37,10 +37,6 @@ namespace Maximumofthree
             }
             return a;
         }
-        /*public T MaxMethod()
-        {
-            T max = GenericMethod<T>.MaxusingGenerics(this.a, this.b, this.c);
-            return max;
-        }*/
+        
     }
 }
