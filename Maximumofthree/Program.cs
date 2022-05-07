@@ -63,12 +63,12 @@ while (true)
         case 6:           
             int[] intarray = {1,2,3,4,5,6,7};
             double[] doublearray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
-            string[] stringarray = { "Apple", "Peach", "Banana" };
-            int Avalue1 = MaxArray.IntArray(intarray);
+            string[] stringarray = { "Apple", "Animal", "Banana" };
+            int Avalue1 = MaxArray<int>.MaxValueOfMultipleUsingGenerics<int>(intarray);
             Console.WriteLine("The Maximum of IntArray is :" + Avalue1);
-            double Avalue2 = MaxArray.DoubleArray(doublearray);
+            double Avalue2 = MaxArray<double>.MaxValueOfMultipleUsingGenerics<double>(doublearray);
             Console.WriteLine("The Maximum of DoubleArray is :" + Avalue2);
-            string Avalue3 = MaxArray.StringArray(stringarray);
+            string Avalue3 = MaxArray<string>.MaxValueOfMultipleUsingGenerics<string>(stringarray);
             Console.WriteLine("The Maximum of StringArray is :" + Avalue3);
             Console.WriteLine("\n");
             break;

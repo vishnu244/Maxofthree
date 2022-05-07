@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Maximumofthree
 {
-    public class MaxArray
+    public class MaxArray<T> where T : IComparable
     {
-        public int[] array;
-        public static int IntArray(int[] intarray)
+        public T[] array;
+
+        public MaxArray(T[] array)
         {
-            return intarray.Max();
+            this.array = array;
         }
-        public static double DoubleArray(double[] doublearray)
+
+        public static T MaxValueOfMultipleUsingGenerics<T>(params T[] array)
         {
-            return doublearray.Max();
+            Array.Sort(array);
+            return array[array.Length-1];
         }
-        public static string StringArray(string[] stringarray)
-        {
-            return stringarray.Max();
-        }
+
 
 
     }
