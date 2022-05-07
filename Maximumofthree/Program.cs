@@ -7,8 +7,7 @@ Console.WriteLine("Welcome to Maximum of Three using generics!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)using INT\n2)using Float\n3)usingString\n4)using generic class\n5)using generic class&Method" +
-        "");
+    Console.WriteLine("Choose the Program to be executed :\n1)using INT\n2)using Float\n3)usingString\n4)using generic class\n5)using generic class&Method\n6)using array");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -60,6 +59,18 @@ while (true)
             string Mvalue3 = GenericMethod<string>.MaxusingGenerics<string>("Apple", "peach", "banana");
             Console.WriteLine("The Maximum of three strings is :" + Mvalue3);
             Console.WriteLine("\n");            
+            break;
+        case 6:           
+            int[] intarray = {1,2,3,4,5,6,7};
+            double[] doublearray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
+            string[] stringarray = { "Apple", "Animal", "Banana" };
+            int Avalue1 = MaxArray<int>.MaxValueOfMultipleUsingGenerics<int>(intarray);
+            Console.WriteLine("The Maximum of IntArray is :" + Avalue1);
+            double Avalue2 = MaxArray<double>.MaxValueOfMultipleUsingGenerics<double>(doublearray);
+            Console.WriteLine("The Maximum of DoubleArray is :" + Avalue2);
+            string Avalue3 = MaxArray<string>.MaxValueOfMultipleUsingGenerics<string>(stringarray);
+            Console.WriteLine("The Maximum of StringArray is :" + Avalue3);
+            Console.WriteLine("\n");
             break;
     }
 }
